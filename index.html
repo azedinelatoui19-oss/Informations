@@ -44,15 +44,20 @@
             padding: 35px 20px;
             border-bottom: 4px solid var(--primary);
         }
-        .logo-img {
-            width: 110px;
+        .logo-container {
+            width: 160px;
             height: 110px;
+            margin: 0 auto 15px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent; /* إزالة الخلفية البيضاء نهائياً */
+        }
+        .logo-img {
+            max-width: 100%;
+            max-height: 100%;
             object-fit: contain;
-            border-radius: 50%;
-            background: #fff;
-            padding: 5px;
-            margin-bottom: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
         }
         .header h1 {
             font-size: 2rem;
@@ -160,8 +165,9 @@
 <body>
     <div class="container">
         <div class="header">
-            <!-- ضع اسم صورة الشعار هنا تماماً كما سترفعها، مثلا logo.png -->
-            <img src="Asset 4.png" alt="شعار مناحل الفاخر" class="logo-img">
+            <div class="logo-container">
+                <img src="Asset 4.png" alt="شعار مناحل الفاخر" class="logo-img">
+            </div>
             <h1>مناحل الفاخر</h1>
             <p>El-Fakhire Apiaries | Agro-Alfakhir</p>
             <span class="badge">📍 حمام قرقور، ولاية سطيف - الجزائر</span>
@@ -171,7 +177,7 @@
             <div class="section">
                 <h2>من نحن</h2>
                 <p>
-                    مؤسسة فلاحية متخصصة ومتميزة في تربية النحل، إنتاج العسل الطبيعي النقي، وتثمين وتحويل منتجات الخلية وفق معايير الجودة العالمية لتكون منتجات "بيو" طبيعية خالصة.
+                    مؤسسة فلاحية متخصصة ومتميزة في تربية النحل، إنتاج العسل الطبيعي النقي، وتثمين وتحويل منتجات الخلية وفق معايير الجودة العالمية لتكون منتجات "Bio" طبيعية خالصة.
                 </p>
             </div>
 
@@ -220,8 +226,8 @@
                     <a href="tel:+213655787605" class="btn btn-phone">
                         <i class="fas fa-phone-alt"></i> 0655787605
                     </a>
-                    <a href="mailto:contact@elfakhire.dz" class="btn btn-email" style="grid-column: span 2;">
-                        <i class="fas fa-envelope"></i> contact@elfakhire.dz
+                    <a href="mailto:azedinelatoui19@gmail.com" class="btn btn-email" style="grid-column: span 2;">
+                        <i class="fas fa-envelope"></i> azedinelatoui19@gmail.com 
                     </a>
                 </div>
             </div>
